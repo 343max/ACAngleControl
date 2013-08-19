@@ -20,12 +20,16 @@
     
     self.angleControl.backgroundColor = [UIColor clearColor];
     self.angleControl.value = 1.0;
+    
+    [self.angleControl addTarget:self action:@selector(valueDidChange:) forControlEvents:UIControlEventValueChanged];
+    
+    [self valueDidChange:nil];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)valueDidChange:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.angleLabel.text = [NSString stringWithFormat:@"%f", self.angleControl.angle];
+    self.valueLabel.text = [NSString stringWithFormat:@"%f", self.angleControl.value];
 }
 
 @end

@@ -13,5 +13,7 @@
 @interface ACViewController : UIViewController
 
 @property (weak) IBOutlet ACAngleControl *angleControl;
+@property (weak, nonatomic) IBOutlet UILabel *angleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
 
 @end
