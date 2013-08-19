@@ -37,7 +37,7 @@
         CGFloat y = CGRectGetHeight(self.bounds) / 2.0;
         
         CGContextSetStrokeColorWithColor(context, [UIColor lightGrayColor].CGColor);
-        CGContextSetLineWidth(context, 1.0);
+        CGContextSetLineWidth(context, 0.5);
         CGContextAddArc(context, x, y, radius, 0.0, M_PI * 2.0, NO);
         CGContextStrokePath(context);
         
