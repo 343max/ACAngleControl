@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ACAngleControl : UIView
+@interface ACAngleControl : UIControl
 
+@property (assign, nonatomic) float angle;
 @property (assign, nonatomic) float value;
 
 @property (assign, nonatomic) float minimumValue;
