@@ -13,6 +13,7 @@
 @property (assign, nonatomic) float angle;
 @property (assign, nonatomic) float value;
 
+@property (assign, nonatomic) float offsetAngle;
 @property (assign, nonatomic) float minimumValue;
 @property (assign, nonatomic) float maximumValue;
 

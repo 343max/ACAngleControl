@@ -64,12 +64,26 @@
 
 - (void)setValue:(float)value;
 {
-    self.angle = value;
+    value = MIN(value, self.maximumValue);
+    value = MAX(value, self.minimumValue);
+    value -= self.minimumValue;
+    
+    float angle = value;
+    angle = angle * (2 * M_PI) / (self.maximumValue - self.minimumValue);
+    angle += self.offsetAngle;
+    self.angle = angle;
 }
 
 - (float)value;
 {
-    return self.angle;
+    float value = self.angle;
+    float diff = self.maximumValue - self.minimumValue;
+    value -= self.offsetAngle;
+    value = value / (2 * M_PI) * diff;
+    if (value >= diff) value -= diff;
+    if (value <= 0) value += diff;
+    value += self.minimumValue;
+    return value;
 }
 
 - (void)setAngle:(float)angle;
