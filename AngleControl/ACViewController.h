@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ACAngleControl.h"
+
 @interface ACViewController : UIViewController
+
+@property (weak) IBOutlet ACAngleControl *angleControl;
 
 @end

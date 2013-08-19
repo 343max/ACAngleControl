@@ -12,4 +12,7 @@
 
 @property (assign, nonatomic) float value;
 
+@property (assign, nonatomic) float minimumValue;
+@property (assign, nonatomic) float maximumValue;
+
 @end

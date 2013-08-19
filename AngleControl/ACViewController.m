@@ -18,9 +18,8 @@
 {
     [super viewDidLoad];
     
-    for (UIView *view in self.view.subviews) {
-        view.backgroundColor = [UIColor clearColor];
-    }
+    self.angleControl.backgroundColor = [UIColor clearColor];
+    self.angleControl.value = 1.0;
 }
 
 - (void)didReceiveMemoryWarning
