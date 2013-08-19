@@ -21,6 +21,7 @@
 		50E89B6F17C2329E00EB115C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E89B5117C2329E00EB115C /* UIKit.framework */; };
 		50E89B7717C2329E00EB115C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50E89B7517C2329E00EB115C /* InfoPlist.strings */; };
 		50E89B7917C2329E00EB115C /* AngleControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E89B7817C2329E00EB115C /* AngleControlTests.m */; };
+		50E89B8517C2333C00EB115C /* ACAngleControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E89B8417C2333C00EB115C /* ACAngleControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		50E89B7417C2329E00EB115C /* AngleControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AngleControlTests-Info.plist"; sourceTree = "<group>"; };
 		50E89B7617C2329E00EB115C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50E89B7817C2329E00EB115C /* AngleControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AngleControlTests.m; sourceTree = "<group>"; };
+		50E89B8317C2333C00EB115C /* ACAngleControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACAngleControl.h; path = AngleControl/ACAngleControl.h; sourceTree = "<group>"; };
+		50E89B8417C2333C00EB115C /* ACAngleControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACAngleControl.m; path = AngleControl/ACAngleControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		50E89B4117C2329D00EB115C = {
 			isa = PBXGroup;
 			children = (
+				50E89B8217C232AE00EB115C /* Control */,
 				50E89B5317C2329E00EB115C /* AngleControl */,
 				50E89B7217C2329E00EB115C /* AngleControlTests */,
 				50E89B4C17C2329E00EB115C /* Frameworks */,
@@ -150,6 +154,15 @@
 				50E89B7517C2329E00EB115C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50E89B8217C232AE00EB115C /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				50E89B8317C2333C00EB115C /* ACAngleControl.h */,
+				50E89B8417C2333C00EB115C /* ACAngleControl.m */,
+			);
+			name = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				50E89B5E17C2329E00EB115C /* ACAppDelegate.m in Sources */,
 				50E89B6417C2329E00EB115C /* ACViewController.m in Sources */,
 				50E89B5A17C2329E00EB115C /* main.m in Sources */,
+				50E89B8517C2333C00EB115C /* ACAngleControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
